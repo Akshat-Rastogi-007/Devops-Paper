@@ -11,19 +11,24 @@ sudo ./sys_manager.sh add_users /home/rastogi/Desktop/names.txt
 
 **Screenshot / Output:**
 
+![UserAdd Screenshot](image/userCreation.png)
 
 ---
 
 ## 2. Setup Project Folders
 
 **Command:**
+
 ```
 ./sys_manager.sh setup_projects rastogi 3
 ```
 
 **Screenshot / Output:**
 
-![Setup Projects Screenshot](YOUR_IMAGE_PATH_HERE)
+![Folder](image/project.png)
+![Folder](image/sub_project.png)
+![Folder](image/readme_file.png)
+![Folder](image/project_command.png)
 
 ---
 
@@ -31,12 +36,12 @@ sudo ./sys_manager.sh add_users /home/rastogi/Desktop/names.txt
 
 **Command:**
 ```
-./sys_manager.sh sys_report sysinfo.txt
+./sys_manager.sh sys_report rastogi /home/rastogi/outputfile.txt
 ```
 
 **Screenshot / Output:**
 
-![System Report Screenshot](YOUR_IMAGE_PATH_HERE)
+![System Report Screenshot](sys_report_file.png)
 
 ---
 
@@ -51,7 +56,7 @@ sudo ./sys_manager.sh add_users /home/rastogi/Desktop/names.txt
 
 **Screenshot / Output:**
 
-![List Zombies Screenshot](YOUR_IMAGE_PATH_HERE)
+![List Zombies Screenshot](image/list_zombies.png)
 
 ### b) List Stopped Processes
 
@@ -62,7 +67,7 @@ sudo ./sys_manager.sh add_users /home/rastogi/Desktop/names.txt
 
 **Screenshot / Output:**
 
-![List Stopped Screenshot](YOUR_IMAGE_PATH_HERE)
+![List Stopped Screenshot](image/list_stopped.png)
 
 ### c) Kill Zombie Processes (Warning)
 
@@ -73,4 +78,56 @@ sudo ./sys_manager.sh add_users /home/rastogi/Desktop/names.txt
 
 **Screenshot / Output:**
 
-![Kill Z
+![Kill Zombies Screenshot](image/kill_zombies.png)
+
+
+### d) Kill Stopped Processes
+
+
+**Command:**
+```
+./sys_manager.sh process_manage rastogi kill_stopped
+```
+
+
+**Screenshot / Output:**
+
+
+![Kill Stopped Screenshot](image/screenshot.png)
+
+
+---
+
+
+## 5. Permission & Ownership Manager
+
+
+**Command:**
+```
+./sys_manager.sh perm_owner rastogi /home/rastogi/projects 755 rastogi rastogi
+```
+
+
+**Screenshot / Output:**
+
+
+![Permission & Ownership Screenshot](image/perm_owner.png)
+
+
+---
+## 6. Help Menu
+
+
+**Command:**
+```
+./sys_manager.sh help
+```
+
+
+**Screenshot / Output:**
+
+
+![Help Menu Screenshot](image/help_menu.png)
+
+
+---
